@@ -28,9 +28,13 @@
 }
 
 #services .box { 
-    padding: 14px;
+    padding: 8px;
     margin: 2px 0px; 
     margin-bottom: 20px;
+}
+
+#services .box img { 
+    height: 55px;
 }
 
 /* Clients section */
@@ -47,6 +51,7 @@
 /* Contact us section */
 #contact-box form{
     width:80%;
+
 }
 /* Footer */
 
@@ -54,7 +59,12 @@
 .h-primary{
     font-size:26px;
 }
+.h-primary center{
+    font-size:26px;
+    padding: -59;
+}
+
 .btn{
-    font-size: 5px;
-    padding: 1px 2px;
+    font-size: 28px;
+    padding: 16px 18px;
 }
