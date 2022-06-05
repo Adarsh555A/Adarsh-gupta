@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+.aly{
+  background-color: rgb(255, 255, 255);
+}
 html{
     scroll-behavior: smooth;
 }
@@ -36,6 +38,7 @@ html{
 /* Navigation Bar: Logo and Image */
 #logo{
     margin: 10px 34px;
+    background-color: #ff1f1f;
 }
 
 #logo img{
@@ -107,13 +110,14 @@ html{
 #services{
     margin: 34px;
     display: flex;
+    background-color: rgb(255, 255, 255);
 }
 #services .box{ 
     border: 2px solid brown;
     padding: 34px;
     margin: 2px 55px;
     border-radius: 28px;
-    background: #efeae1;
+    background: #fad2d2;
     margin-bottom: 20px;
 }
 
@@ -131,7 +135,6 @@ html{
 /* Clients Section */
 #client-section{ 
     position: relative;
-    background-color: #f2f2f2c5;
 }
 
 #client-section::before{
@@ -144,6 +147,24 @@ html{
  opacity: 0.3;
 }
 
+
+#Projects-section::before{
+ content: "";
+ position: absolute;
+ background: url('../78.jpg');
+ width: 100%;
+ height: 23%;
+ z-index: -1;
+ opacity: 0.3;
+ background-color: rgba(221, 221, 221, 0.301);
+}
+
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #clients{
     display: flex;
     justify-content: center;
@@ -156,6 +177,25 @@ html{
 
 #clients img{
     height: 124px;
+}
+
+#client img{
+    height: 124px;
+}
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 1, 1);
+    text-align: center;
+    cursor: pointer;
+  }
+
+.hero-text button:hover {
+    background-color: rgba(255, 9, 124, 0.911);
+    color: white;
 }
 
 
@@ -207,12 +247,18 @@ footer{
 /* Utility Classes */
 .h-primary{
     font-family: 'Bree Serif', serif;
-    color: black;
+    color: rgb(0, 0, 0);
+    font-size: 3.8rem;
+    padding: 31px;
+}
+/* Utility Classes */
+.E-primary{
+    font-family: 'Bree Serif', serif;
+    color: rgb(248, 16, 16);
     font-size: 3.8rem;
     padding: 12px;
-    color: rgb(0, 0, 0);
+    background:url('.../78.jpg') ;
 }
-
 .h-secondary{
     font-family: 'Bree Serif', serif;
     font-size: 2.3rem;
@@ -243,17 +289,79 @@ footer{
 .center{
     text-align: center;
 }
-.alr{
-    background-color: #f2f2f2;
+
+#Projects-section::before{
+    content: "";
+    position: absolute;
+    background: url('../78.jpg');
+    width: 100%;
+    height: 23%;
+    z-index: -1;
+    opacity: 0.3;
+    background-color: rgba(221, 221, 221, 0.301);
+}
+
+   .client-item{
+       padding: 34px;
+   }
+   
+   #clients img{
+       height: 124px;
+}
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+    background-color: #f2f2f2c5;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
 }
 .whatapps{
     position: fixed;
     bottom: 40px;
-    right: 20px;
-    left: 0px;
+    left: 20px;
 }
-.logo{
-    color: rgb(255, 0, 0);
-    background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
+
+  
+.icon-bar {
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
 }
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }

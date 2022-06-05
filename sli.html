@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="asli.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Projects Site</title>
+<body>
+
+	<nav>
+		<div class="logo">
+			<p>AR INDUSTRY</p>
+		</div>
+			<a href="#Home" class="active">Home</a>
+			<a href="#Projects">Projects</a>
+	</nav>
+  </div>
+  <section id="Home">
+    <div class="slideshow-container">
+      <div class="mySlides1">
+        <img src="1.png" style ="width:100%;">
+      </div>
+    
+      <div class="mySlides1">
+        <img src="2.png">
+      </div>
+    
+      <div class="mySlides1">
+        <img src="3.jpg" style ="width:100%;">
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    <script>
+    let slideIndex = [1,1];
+    let slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+  </body>
+  <body>
+
+    <!-- MAIN (Center website) -->
+    <section id="Projects">
+    <div class="main">
+  
+    <h2>Made by Adarsh Gupta</h2>
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn" onclick="filterSelection('people')"> People</button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <a href="Signup1.html"><img src="6.jpg" alt="Mountains" style="width:100%"></a>
+        </div>
+      </div>
+      <section id="Lights">
+      <div class="column nature">
+        <div class="content">
+          <a href="Signup1.html"><img src="6.jpg" alt="Lights" style="width:100%"></a>
+          <h4>Lights</h4>
+        </div>
+      </div>
+    </section>
+      <div class="column nature">
+        <div class="content">
+        <img src="6.jpg" alt="Nature" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      
+      <div class="column cars">
+        <div class="content">
+          <img src="7.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="7.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="7.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+      <div class="column people">
+        <div class="content">
+          <img src="3.jpg" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="3.jpg" alt="Car" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="3.jpg" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+  </section>
+    
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/profile.php?id=100069742045076" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="https://twitter.com/F4Kshortgaming1" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="https://www.youtube.com/channel/UCzLfzEK2igQELyHEL8wwSBQ/videos" class="youtube"><i class="fa fa-youtube"></i></a> 
+    </div>
+    </body>
+    <footer>
+      <div class="center">
+          Copyright Amarts.in. All rights reserved!
+      </div>
+  </footer>
+</head>
+</html>
