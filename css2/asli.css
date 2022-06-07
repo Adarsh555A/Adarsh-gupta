@@ -201,16 +201,16 @@ img {vertical-align: middle;}
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: white;
+    background-color: rgb(255, 14, 14);
     cursor: pointer;
   }
   
   .btn:hover {
-    background-color: #ddd;
+    background-color: rgb(241, 144, 144);
   }
   
   .btn.active {
-    background-color: #666;
+    background-color: rgb(252, 159, 159);
     color: white;
   }
   .center{
