@@ -1,7 +1,10 @@
 .header{
     display: flex;
-    width: 100%;
+    width: 99%;
     height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
     background-color: white;
     border: 1px solid black;
 }
@@ -18,6 +21,7 @@ display: flex;
 width: 100%;
 overflow: hidden;
 height: 616px;
+margin-top: 86px;
 border: 1px solid black;
 justify-content: center;
 background: url(beach.jpg);
@@ -99,7 +103,7 @@ border: 1px solid black;
     opacity: 0;
    transition: transform 0.5s,opacity 0.5s;
     width: 100%;
-    height: 500px;   
+    height: 100%;   
     border: 1px solid black;
     }
     .food .head{
@@ -152,6 +156,32 @@ border: 1px solid black;
     .container{
         display: flex;
     }
+
+.scrolldown{
+    position: fixed;
+    right: 40px;
+    bottom: 10px;    
+    z-index: 1;
+}
+.fa{
+    font-size: xx-large;
+    display: grid;
+    position: relative;
+    top: 0px;
+    justify-content: center;
+    animation: vibrate 2s infinite;
+}
+a{
+    text-decoration: none;
+}
+li{
+    font-family: cursive;
+    font-weight: bold;
+}
+@keyframes vibrate {
+    from{top:0px}
+    to{top: 10px;}
+}
 @media only screen and (max-width: 600px) {
 .hero{
     background-size: 374px;
@@ -159,9 +189,20 @@ border: 1px solid black;
 height: 169px;
 background-position: bottom;
 }
+.container{
+    display: block;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
 .content{
     width: 190px;
     margin: 2px;
+}
+.header{
+    width: 96%;
 }
 
 }
