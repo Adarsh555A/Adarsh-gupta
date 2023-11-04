@@ -12,22 +12,22 @@ function myscroll(){
   var draw = body * scrollpercent;
   // console.log(draw)
   let range = Math.floor((draw*100)/body);
-  if (range > 73) {
-    conter += 4;
-    console.log(conter)
+  // if (range > 73) {
+  //   conter += 4;
+  //   console.log(conter)
     
-    img[2].style.rotate = parseInt(img[2].style.rotate) > 360||parseInt(img[2].style.rotate) > 303?'360deg':`${(303 + conter)}deg`;
-    img[0].style.rotate = parseInt(img[0].style.rotate) < 0||parseInt(img[2].style.rotate) > 57?'0deg':`${(57 - conter)}deg`;
+  //   img[2].style.rotate = parseInt(img[2].style.rotate) > 360||parseInt(img[2].style.rotate) > 303?'360deg':`${(303 + conter)}deg`;
+  //   img[0].style.rotate = parseInt(img[0].style.rotate) < 0||parseInt(img[2].style.rotate) > 57?'0deg':`${(57 - conter)}deg`;
 
-  }
-  if (range < 73) {
-    conter += 1;
-    console.log(conter)
+  // }
+  // if (range < 73) {
+  //   conter += 1;
+  //   console.log(conter)
     
-    img[2].style.rotate = parseInt(img[2].style.rotate) < 303?`${(303 + conter)}deg`:`${(360 - conter)}deg`;
-    // img[0].style.rotate = parseInt(img[0].style.rotate) < 0||parseInt(img[2].style.rotate) > 57?'0deg':`${(57 - conter)}deg`;
+  //   img[2].style.rotate = parseInt(img[2].style.rotate) < 303?`${(303 + conter)}deg`:`${(360 - conter)}deg`;
+  //   // img[0].style.rotate = parseInt(img[0].style.rotate) < 0||parseInt(img[2].style.rotate) > 57?'0deg':`${(57 - conter)}deg`;
 
-  }
+  // }
 
 }
 if (window.matchMedia("(max-width:800px)").matches) {
@@ -58,3 +58,51 @@ var videotime = setTimeout(()=>{
   
 },6000)
   }
+
+  gsap.from("video",{
+    scale:1,
+    duration:3,
+    delay:2
+})
+
+gsap.to("#img1",{
+    scrollTrigger:{
+        trigger:".share",
+        scroller:"body",
+
+        scrub:2
+    },
+    rotate:360,
+    duration:3
+})
+gsap.to("#img2",{
+  scrollTrigger:{
+      trigger:".photos",
+      scroller:"body",
+
+      scrub:2
+  },
+  rotate:0,
+  duration:3
+})
+gsap.to("#img3",{
+  scrollTrigger:{
+      trigger:".photos",
+      scroller:"body",
+
+      scrub:2
+  },
+  rotate:358,
+  duration:3
+})
+
+gsap.to(".easter",{
+  scrollTrigger:{
+      trigger:".easter",
+      scroller:"body",
+
+      scrub:2
+  },
+  scaleY:1,
+  duration:3
+})

@@ -151,15 +151,19 @@ height: 57vw;
     border: 3px solid white;
 }
 .photos :nth-child(1){
-    rotate: 57deg;
+    rotate: 331deg;
 }
 .photos :nth-child(2){
     position: relative;
-    top: 10px;
-    z-index: -1;
+    right: 19%;
+    top: 46%;
+    rotate: -14deg;
 }
 .photos :nth-child(3){
-    rotate: 303deg;
+    right: 20%;
+    rotate: 380deg;
+    position: relative;
+    z-index: -1;
 }
 .share{
     display: grid;
@@ -182,6 +186,7 @@ height: 57vw;
 .easter{
     width: 100%;
     height: 97vw;
+    transform: scaleY(1.5);
     border-radius: 50%;
     background-color: #ffebcc;
 }
@@ -241,6 +246,9 @@ height: 57vw;
         }
         .hero{
             height: 274vw;
+        }
+        .photos #img1{
+            /* transform: translate(-99%,-75%) rotate(-5.23deg); */
         }
       .intro_mo {
         width: 100%;
