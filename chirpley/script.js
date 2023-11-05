@@ -67,32 +67,33 @@ var videotime = setTimeout(()=>{
 
 gsap.to("#img1",{
     scrollTrigger:{
-        trigger:".share",
+        trigger:".gallery",
         scroller:"body",
 
         scrub:2
     },
-    rotate:360,
+    rotate:0,
     duration:3
 })
 gsap.to("#img2",{
   scrollTrigger:{
-      trigger:".photos",
+      trigger:".gallery",
       scroller:"body",
 
       scrub:2
   },
   rotate:0,
+  top:10,
   duration:3
 })
 gsap.to("#img3",{
   scrollTrigger:{
-      trigger:".photos",
+      trigger:".gallery",
       scroller:"body",
 
       scrub:2
   },
-  rotate:358,
+  rotate:0,
   duration:3
 })
 
@@ -104,5 +105,17 @@ gsap.to(".easter",{
       scrub:2
   },
   scaleY:1,
+  duration:3
+})
+
+
+gsap.to("#egg",{
+  scrollTrigger:{
+      trigger:".easter",
+      scroller:"body",
+
+      scrub:2
+  },
+  scale:1.5,
   duration:3
 })

@@ -91,14 +91,28 @@ height: 57vw;
 }
 .bg{
     height: 48vw;
+    line-height: 1;
 }
 .icons{
     height: 59vw;
 }
+
 .bg :nth-child(1){
     position: relative;
-    bottom: 205px;
+    bottom: 175px;
     left: 6px;
+    /* line-height: 1; */
+    font-family: tusker;
+    font-size: 26vw;
+    animation-name: show;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+.bg :nth-child(1) span{
+    position: relative;
+    bottom: 42px;
+    left: 6px;
+    /* line-height: 1; */
     font-family: tusker;
     font-size: 26vw;
     animation-name: show;
@@ -115,7 +129,7 @@ height: 57vw;
 }
 .bg :nth-child(2){
     position: relative;
-    bottom: 704px;
+    bottom: 75%;
     left: 203px;
     font-size: 3vw;
 }
@@ -151,17 +165,17 @@ height: 57vw;
     border: 3px solid white;
 }
 .photos :nth-child(1){
-    rotate: 331deg;
+    rotate: 306deg;
 }
 .photos :nth-child(2){
     position: relative;
     right: 19%;
-    top: 46%;
-    rotate: -14deg;
+    top: 72px;
+    rotate: 53deg;
 }
 .photos :nth-child(3){
     right: 20%;
-    rotate: 380deg;
+    rotate: 290deg;
     position: relative;
     z-index: -1;
 }
@@ -185,6 +199,8 @@ height: 57vw;
 }
 .easter{
     width: 100%;
+    display: flex;
+    justify-content: center;
     height: 97vw;
     transform: scaleY(1.5);
     border-radius: 50%;
@@ -203,10 +219,13 @@ height: 57vw;
 }
 .egg{
     position: relative;
-    left: 32%;
+    /* left: 32%; */
+    /* z-index: 2; */
+    top: 2%;
+    border-radius: 50%;
     display: block;
-    width: 119px;
-    height: 170px;
+    width: 250px;
+    height: 310px;
 }
 .platforms{
     display: flex;
@@ -225,6 +244,14 @@ height: 57vw;
           overflow-x: hidden;
           overflow-y: scroll;
           -webkit-font-smoothing: antialiased;
+      }
+      .bg .space{
+        content: "==";
+        opacity: 0;
+      }
+      .egg{
+        width: 100px;
+        height: 100px;
       }
       .bg{
         height: 254vw;
@@ -279,7 +306,8 @@ height: 57vw;
     .page1 .content{
         position: relative;
         left: 8px;
-        font-size: 18vw;
+        font-size: 26vw;
+        word-break: break-word;
     }
     .platforms li{
         margin-right: 10px;
@@ -301,6 +329,7 @@ height: 57vw;
           margin: 0px 0px 3px 0px; 
           display: flex;
           justify-content: space-evenly;
+          overflow-x: hidden;
       }
       /* margin: 0px 0px 3px 17px; */
       .headf {
