@@ -104,7 +104,7 @@ gsap.to(".easter",{
 
       scrub:2
   },
-  scaleY:1,
+  scaleY:1.9,
   duration:3
 })
 

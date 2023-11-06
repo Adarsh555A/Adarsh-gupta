@@ -99,7 +99,7 @@ height: 57vw;
 
 .bg :nth-child(1){
     position: relative;
-    bottom: 175px;
+    top: 175px;
     left: 6px;
     /* line-height: 1; */
     font-family: tusker;
@@ -110,7 +110,7 @@ height: 57vw;
 }
 .bg :nth-child(1) span{
     position: relative;
-    bottom: 42px;
+    top: 22px;
     left: 6px;
     /* line-height: 1; */
     font-family: tusker;
@@ -129,7 +129,7 @@ height: 57vw;
 }
 .bg :nth-child(2){
     position: relative;
-    bottom: 75%;
+    top: 35%;
     left: 203px;
     font-size: 3vw;
 }
@@ -202,7 +202,7 @@ height: 57vw;
     display: flex;
     justify-content: center;
     height: 97vw;
-    transform: scaleY(1.5);
+    transform: scaleY(0.5);
     border-radius: 50%;
     background-color: #ffebcc;
 }
@@ -288,21 +288,22 @@ height: 57vw;
     }
     .bg :nth-child(1){
         position: relative;
-        top: -12vw;
+        top: 357px;
+        left: 43px;
+        line-height: 1;
         font-family: tusker;
-        font-size: 64vw;
-        left: 62px;
+        font-size: 82vw;
         animation-name: show;
         animation-duration: 0.5s;
         animation-delay: 0s;
     }
     .bg :nth-child(2) {
         position: relative;
-        bottom: 235px;
-        word-break: break-word;
-        left: 33px;
-        font-size: 8vw;
-    }
+    top: 35%;
+    left: 6px;
+    word-break: break-word;
+    font-size: 8vw;
+}
     .page1 .content{
         position: relative;
         left: 8px;
