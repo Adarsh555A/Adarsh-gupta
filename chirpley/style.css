@@ -99,7 +99,7 @@ height: 57vw;
 
 .bg :nth-child(1){
     position: relative;
-    top: 175px;
+    bottom: 175px;
     left: 6px;
     /* line-height: 1; */
     font-family: tusker;
@@ -110,7 +110,7 @@ height: 57vw;
 }
 .bg :nth-child(1) span{
     position: relative;
-    top: 22px;
+    bottom: 42px;
     left: 6px;
     /* line-height: 1; */
     font-family: tusker;
@@ -129,7 +129,7 @@ height: 57vw;
 }
 .bg :nth-child(2){
     position: relative;
-    top: 35%;
+    bottom: 75%;
     left: 203px;
     font-size: 3vw;
 }
@@ -288,22 +288,21 @@ height: 57vw;
     }
     .bg :nth-child(1){
         position: relative;
-        top: 357px;
-        left: 43px;
-        line-height: 1;
+        top: -12vw;
         font-family: tusker;
-        font-size: 82vw;
+        font-size: 64vw;
+        left: 62px;
         animation-name: show;
         animation-duration: 0.5s;
         animation-delay: 0s;
     }
     .bg :nth-child(2) {
         position: relative;
-    top: 35%;
-    left: 6px;
-    word-break: break-word;
-    font-size: 8vw;
-}
+        bottom: 235px;
+        word-break: break-word;
+        left: 33px;
+        font-size: 8vw;
+    }
     .page1 .content{
         position: relative;
         left: 8px;
