@@ -20,8 +20,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: relative;
-
 
 
   }
@@ -298,7 +296,7 @@ height: 57vw;
     }
     .bg :nth-child(2) {
         position: relative;
-        bottom: 235px;
+        bottom: 23%;
         word-break: break-word;
         left: 33px;
         font-size: 8vw;
@@ -330,6 +328,7 @@ height: 57vw;
           display: flex;
           justify-content: space-evenly;
           overflow-x: hidden;
+          flex-wrap: wrap;
       }
       /* margin: 0px 0px 3px 17px; */
       .headf {
