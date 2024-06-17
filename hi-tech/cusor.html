@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.cursor{
+    z-index: 999;
+    position: fixed;
+    /* background-color: rgb(0, 204, 255); */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.blob{
+
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+</style>
+<body>
+    <div class="cursor">
+        <div class="blob">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgb(255, 166, 93);"></stop>
+                    <stop offset="100%" style="stop-color: rgb(255, 217, 113);"></stop>
+                  </linearGradient>
+                </defs>
+                <path  fill="url(#gradient)">
+                    <animate attributeName="d"
+                    dur="10000ms"
+                    repeatCount="indefinite"
+                    values="M427,318.5Q359,387,284,407Q209,427,161,371.5Q113,316,89.5,238.5Q66,161,136,108.5Q206,56,305.5,56Q405,56,450,153Q495,250,427,318.5Z;
+                    M383,319.5Q361,389,289,392.5Q217,396,158,359.5Q99,323,116.5,258.5Q134,194,171.5,132.5Q209,71,295.5,77.5Q382,84,393.5,167Q405,250,383,319.5Z;
+                    M425,333.5Q383,417,292.5,439Q202,461,164,385.5Q126,310,126,250Q126,190,173.5,156Q221,122,289.5,118Q358,114,412.5,182Q467,250,425,333.5Z;
+                    M393.07645,308.16385Q342.46216,366.3277,278.81848,384.27392Q215.1748,402.22013,151.33193,365.23108Q87.48905,328.24203,85.96888,248.98655Q84.44871,169.73108,150.19074,136.2378Q215.93277,102.74453,280.88571,116.47983Q345.83865,130.21514,394.7647,190.10757Q443.69074,250,393.07645,308.16385Z;
+                    M418.5,341.5Q396,433,305,419.5Q214,406,142.5,371Q71,336,82,255Q93,174,145.5,98.5Q198,23,297,45Q396,67,418.5,158.5Q441,250,418.5,341.5Z;
+                    "></animate>
+                </path>
+              </svg>
+        </div>
+    </div>
+</body>
+<script>
+    const cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove",(e)=>{
+let x = e.pageX;
+let y = e.pageY;
+
+cursor.style.top = y + "px";
+cursor.style.left = x + "px";
+
+
+})
+</script>
+</html>
