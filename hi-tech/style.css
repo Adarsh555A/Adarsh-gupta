@@ -149,7 +149,9 @@ height: 500px;
 }
 @media only screen and (max-width: 600px) {
    
-
+  .hi{
+    font-size: small;
+  }
 
     .blob{
 
@@ -200,4 +202,32 @@ height: 500px;
 position: absolute;
 width: 100%;
 height: 100%;
+}
+
+
+/* typing animation */
+
+.hi span {
+    color: #BD53ED;
+    position: relative;
+}
+
+.hi span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #BD53ED;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+.hi span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
 }
