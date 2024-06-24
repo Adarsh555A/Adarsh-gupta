@@ -8,9 +8,13 @@ cursor.style.left = x + "px";
 
 
 })
+// document.querySelector("nav").addEventListener("mouseover",()=>{
+//     cursor.style.zIndex = 1;
+// });
 
-
-
+// document.querySelector("nav").addEventListener("mouseout",()=>{
+//     cursor.style.zIndex = 0;
+// });
 
 
 

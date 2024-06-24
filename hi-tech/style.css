@@ -3,7 +3,25 @@
     font-weight: 100;
     font-style: normal;
   }
+  body{
+    cursor: url("./img/icons8-cursor-32.png"),auto;
+  }
+  header:hover{
+    
+    cursor: url("./img/icons8-cursor-30.png"),auto;
+  }
+  nav{
+    font-weight: bold;
+  }
+  ::-moz-selection { /* Code for Firefox */
+    color: rgb(255, 255, 255);
+    background: pink;
+  }
   
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: pink;
+  }
   .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -149,6 +167,14 @@ height: 500px;
             left: 890px;
 
             }
+            .blob6{
+
+              position: absolute;
+              width: 500px;
+              height: 500px;
+              /* right: 890px; */
+
+              }
 .blob:nth-child(2){
     filter: blur(50px);
 }
@@ -163,6 +189,10 @@ height: 500px;
 }
 .blob5:nth-child(2){
     filter: blur(50px);
+}
+.blob6:nth-child(2){
+  filter: blur(50px);
+
 }
 @media only screen and (max-width: 600px) {
    
