@@ -69,10 +69,27 @@
     font-weight: 900;
     font-style: italic;
   }
-  
+  .box_hero{
+animation: bord 3s infinite;
+  }
+@keyframes bord {
+  0%{  border: 2px solid rgb(0, 255, 21);}
+  25%{  border: 2px solid rgb(0, 38, 255);}
+  75%{  border: 2px solid rgb(255, 0, 0);}
+  100%{  border: 2px solid rgb(255, 251, 0);}
 
-
-
+}
+.box_hero:hover{
+  transform: scale(1.2);
+}
+.box_courses{
+  background-color: rgba(253, 253, 253, 0.63);
+  border: 2px dotted rgb(255, 0, 255);
+}
+.box_courses:hover{
+  transform: scale(1.2);
+  border: 1px double orange;
+}
 
 .box {
     /* background: linear-gradient(#e0f7ff73, #f1dbdf7a, #ffffe061); */
