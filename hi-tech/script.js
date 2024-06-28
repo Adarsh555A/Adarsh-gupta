@@ -64,67 +64,46 @@ typeEffect();
 
 
 
-
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 // var btn = document.getElementById("myBtn");
-document.querySelectorAll('.course')[0].addEventListener("click",(el)=>{
+for (let i = 0; i <= 10; i++) {
+
+ document.querySelectorAll('.course')[i].addEventListener("click",(el)=>{
     // document.querySelector(".show").classList.add("hide");
     modal.style.display = "block";
+    console.log(el.target.id)
+
+    fetch("course.json")
+    .then((response)=>
+        response.json()
+    
+    )
+    .then((data)=>{console.log(data)
+        let coureparent = document.querySelector('.pop');
+
+        coureparent.children[0].src = data[el.target.id].image;
+        coureparent.children[1].innerText = data[el.target.id].name;
+        coureparent.children[2].innerText = "Duration: "+data[el.target.id].Duration;
+        coureparent.children[4].innerText = data[el.target.id].information;
+
+        coureparent.children[6].innerText = data[el.target.id].Benefits;
+
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+
+
+
 })
 
-document.querySelectorAll('.course')[1].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
+}
 
-document.querySelectorAll('.course')[2].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
 
-document.querySelectorAll('.course')[3].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
 
-document.querySelectorAll('.course')[4].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
-
-document.querySelectorAll('.course')[5].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
-
-document.querySelectorAll('.course')[6].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
-
-document.querySelectorAll('.course')[7].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
-
-document.querySelectorAll('.course')[8].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
-
-document.querySelectorAll('.course')[9].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
-
-document.querySelectorAll('.course')[10].addEventListener("click",(el)=>{
-    // document.querySelector(".show").classList.add("hide");
-    modal.style.display = "block";
-})
 
 
 // Get the <span> element that closes the modal
