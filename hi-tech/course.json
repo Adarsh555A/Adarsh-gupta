@@ -1,0 +1,91 @@
+[
+    {
+        "id":"0",
+        "image":"./img/digital.png",
+        "name":"Textile and digital Design",
+        "information":"Basic OF Computer Photoshop, Use Of Tools,Channel Work, Border, Pallu & Body Design,Repeat & Rebit Setting,Patch Work & Spray Work,Dotting / Colour, Halftone,Bandhni Work, Resha, Butta, Texture etc",
+        "Duration":"6 months",
+        "Benefits":"Textile designers and digital designers both bring unique benefits to the creative industry. Textile designers have the opportunity for creative expression and innovation, while digital designers can enjoy expanded creativity, the ability to create wearable art, and the advantages of efficiency and sustainability."
+    },
+    {
+        "id":"1",
+        "image":"./img/Graphic_design.png",
+        "name":"Graphic Designing",
+        "information":"Principles of Graphics,Color Management, Typography, Iconography,Product Design For Advertising, Photo Editing,Corel Draw, Aftereffect, Photoshop, Illustrator,Logos, Business Cards, Flyers, Brochures Social Media & Business PostsGraphic",
+        "Duration":"6 months",
+        "Benefits":"A graphic designer offers numerous benefits, including creative expression, job flexibility, tangible results, and the opportunity to contribute to brand identity and business success. The field of graphic design provides a dynamic and rewarding career path for individuals with a passion for design and visual communication."
+    },
+    {
+        "id":"2",
+        "image":"./img/Ecom.png",
+        "name":"E-commerce",
+        "information":"",
+        "Duration":"6 months",
+        "Benefits":"e-commerce courses offer a range of benefits, including foundational knowledge, business development skills, advanced marketing techniques, specialized knowledge, cost-saving potential, extended opening hours, global reach, career opportunities, and flexibility. These courses can equip individuals with the necessary skills and knowledge to succeed in the dynamic world of e-commerce."
+    },
+    {
+        "id":"3",
+        "image":"./img/spoken.png",
+        "name":"Spoken English",
+        "information":"Basics of Communication,Word Meaning, Helping Verbs, Essential Grammar,Interrogative Sentence, Modal, Tense,Story Writing, Group Discussion,WH-Words, Conjuction,Public Speaking Skills & Interview skills Spoken English",
+        "Duration":"2-3 months",
+        "Benefits":"Improving spoken English offers a range of benefits, including enhanced global communication, increased career opportunities, cultural understanding, confidence building, academic advancement, enriched travel experiences, access to information, and personal development. These advantages make spoken English a valuable skill in today's interconnected world."
+    },
+    {
+        "id":"4",
+        "image":"./img/Tally.png",
+        "name":"Tally Prime",
+        "information":"Introduction to Accounting,Introduction to Inventory,Credit Transaction,Discount, Cash Transaction, Interest,Calculation, Cost Category & Cost Center,Goods & Assets, Adjustment Entries,GST, TDS, Service Tax, Order Processing Year Entry, Trial Balance,Final Accounts",
+        "Duration":"2-3 months",
+        "Benefits":"Tally Prime offers several benefits, including simplicity, user-friendliness, comprehensive business management, real-time financial insights, GST compliance, efficient inventory management, data security, flexibility, scalability, and cost-effectiveness. These advantages make Tally Prime a valuable tool for businesses looking to streamline their accounting and inventory management processes."
+    },
+    {
+        "id":"5",
+        "image":"./img/Share.png",
+        "name":"Learn Stock Trading",
+        "information":"",
+        "Duration":"6 months",
+        "Benefits":"It's important to note that stock trading involves risks, and individuals should approach it with caution and proper risk management strategies. Continuous learning, practice, and staying informed are key to success in stock trading."
+    },
+    {
+        "id":"6",
+        "image":"./img/photoshop.png",
+        "name":"Photoshop",
+        "information":"",
+        "Duration":"3 months",
+        "Benefits":"Learning Photoshop offers several benefits, including enhanced creativity, expanded career opportunities, image editing and retouching capabilities, design and layout skills, digital marketing proficiency, personal project possibilities, collaboration opportunities, brand building potential, continuous learning, and flexibility. These advantages make Photoshop a valuable tool for individuals in various industries and creative pursuits."
+    },
+    {
+        "id":"7",
+        "image":"./img/BCATUT.png",
+        "name":"BCA Tuition",
+        "information":"",
+        "Duration":"6 months",
+        "Benefits":"BCA tuition offers several benefits, including enhanced learning, clarification of doubts, individualized attention, practice and revision, exam preparation, supplemental learning, improved performance, motivation and accountability, preparation for future challenges, and building a strong foundation. These advantages can contribute to students' academic success and help them excel in their BCA studies."
+    },
+    {
+        "id":"8",
+        "image":"./img/ccc.png",
+        "name":"CCC",
+        "information":"Computer Fundamentals,Ms-Office,Government job,Typing Master,Office Jobwork Traning,Software Installation",
+        "Duration":"2-3 months",
+        "Benefits":"It's important to note that the specific benefits of CCC may vary depending on the context and the organization offering the course. It is recommended to refer to official sources or specific course details for accurate and detailed information about the benefits of CCC in a particular context."
+    },
+    {
+        "id":"9",
+        "image":"./img/basic course.jpg",
+        "name":"Basic Course",
+        "information":"Computer Concept & Fundamental,Keyboard Shortcuts,Windows 2007,2010,2011,Operating System,Microsoft Office, MS Word,MS Excel, MS Power Point, E-Mail & Internet Technology, Office Jobwork Traning,Tally Prime With GST",
+        "Duration":"6 months",
+        "Benefits":"It's important to note that the specific benefits of a basic computer course may vary depending on the course content, duration, and the individual's prior knowledge. It is recommended to refer to specific course details or consult with educational institutions for accurate and detailed information about the benefits of a particular basic computer course."
+    },
+    {
+        "id":"10",
+        "image":"./img/DTP.jpg",
+        "name":"DTP",
+        "information":"How To Use Coral Draw Tools,Visiting Card, Invitation Card, Marriage Card,Flex Banner, Brochures, Bill Book, Magazine Page,Background Change, Studio Base Editing,Create Passport Photo, Web Layouts Karizma Photo Album, Photo Mixing",
+        "Duration":"6 months",
+        "Benefits":"It's important to note that the specific benefits of DTP may vary depending on the context, software used, and individual requirements. It is recommended to refer to specific sources or consult with DTP professionals for accurate and detailed information about the benefits of DTP in a particular context."
+    }
+
+]
