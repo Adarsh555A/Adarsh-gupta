@@ -258,7 +258,9 @@ height: 500px;
   justify-content: center;
   border: 1px solid skyblue;
 }
-
+.pop h2{
+  font-size: xx-large;
+}
 
 @media only screen and (max-width: 600px) {
    
@@ -307,6 +309,11 @@ height: 500px;
         }
         .pop img{
           display: grid;
+          width: 80vw;
+          height: 80vw;
+        }
+        .pop h2{
+          font-size: xx-large;
         }
   }
 
