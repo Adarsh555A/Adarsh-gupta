@@ -122,3 +122,39 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+
+
+
+
+let url = "https://script.google.com/macros/s/AKfycbzm8z_wFLRKXR-YTtlIHMZe8JV5ycGt4WrQj9cGILWJT9bFRBb0_Cb-xmSVhgS3Qxk-Wg/exec";
+     
+    let form = document.querySelector('#form');
+     form.addEventListener("submit",(e)=>{
+     let d = new FormData(form);
+     console.log(d)
+
+     fetch(url,{
+        method:'POST',
+        body:d
+     }).then((res)=>res.text())
+     .then((finalres)=>{
+        let btn = document.querySelector('#form button');
+        btn.innerHTML = "Submitted SuccessFully";
+        btn.style.backgroundColor = "#04db04";
+        let time = setTimeout(()=>{
+            btn.innerHTML = "Submit";
+            btn.style.backgroundColor = "rgb(59 130 246)";
+            clearTimeout(time);
+
+        },3000)
+        
+
+        
+      
+
+     })    
+    e.preventDefault();
+    })
