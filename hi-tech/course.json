@@ -20,7 +20,7 @@
         "image":"./img/Ecom.png",
         "name":"E-commerce",
         "information":"",
-        "Duration":"6 months",
+        "Duration":"3 months",
         "Benefits":"e-commerce courses offer a range of benefits, including foundational knowledge, business development skills, advanced marketing techniques, specialized knowledge, cost-saving potential, extended opening hours, global reach, career opportunities, and flexibility. These courses can equip individuals with the necessary skills and knowledge to succeed in the dynamic world of e-commerce."
     },
     {
@@ -43,8 +43,8 @@
         "id":"5",
         "image":"./img/Share.png",
         "name":"Learn Stock Trading",
-        "information":"",
-        "Duration":"6 months",
+        "information":"fee 7999",
+        "Duration":"2 months",
         "Benefits":"It's important to note that stock trading involves risks, and individuals should approach it with caution and proper risk management strategies. Continuous learning, practice, and staying informed are key to success in stock trading."
     },
     {
@@ -57,7 +57,7 @@
     },
     {
         "id":"7",
-        "image":"./img/BCATUT.png",
+        "image":"./img/BCATUT.jpg",
         "name":"BCA Tuition",
         "information":"",
         "Duration":"6 months",
@@ -76,7 +76,7 @@
         "image":"./img/basic course.jpg",
         "name":"Basic Course",
         "information":"Computer Concept & Fundamental,Keyboard Shortcuts,Windows 2007,2010,2011,Operating System,Microsoft Office, MS Word,MS Excel, MS Power Point, E-Mail & Internet Technology, Office Jobwork Traning,Tally Prime With GST",
-        "Duration":"6 months",
+        "Duration":"2 months",
         "Benefits":"It's important to note that the specific benefits of a basic computer course may vary depending on the course content, duration, and the individual's prior knowledge. It is recommended to refer to specific course details or consult with educational institutions for accurate and detailed information about the benefits of a particular basic computer course."
     },
     {
